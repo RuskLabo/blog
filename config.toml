@@ -4,8 +4,6 @@ defaultContentLanguage = 'ja'
 title = 'RuskLabo_Blog'
 theme = 'PaperMod'
 
-googleAnalytics: G-HK5FW9E372
-
 [[menu.main]]
   weight = 1
   identifier = "home"
