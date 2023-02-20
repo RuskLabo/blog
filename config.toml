@@ -1,4 +1,4 @@
-baseURL = 'https://rusklabo.github.io'
+baseURL = 'https://rusklabo.github.io/blog'
 languageCode = 'ja-jp'
 title = 'RuskLabo_Blog'
 theme = 'PaperMod'
@@ -10,6 +10,17 @@ theme = 'PaperMod'
     pre = "<i class='fa fa-heart'></i>"
     url = "/Search"
     weight = 10
+  [[menu.main]]
+    identifier = "Archives"
+    name = "Archives"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/archives"
+    weight = 10
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  archive = "archives"
