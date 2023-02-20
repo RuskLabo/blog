@@ -1,26 +1,24 @@
-baseURL = 'https://rusklabo.github.io/blog'
-languageCode = 'ja-jp'
+baseURL = 'http://example.org/'
+languageCode = 'ja'
+defaultContentLanguage = 'ja'
 title = 'RuskLabo_Blog'
 theme = 'PaperMod'
- 
-[menu]
-  [[menu.main]]
-    identifier = "search"
-    name = "Search"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/Search"
-    weight = 10
-  [[menu.main]]
-    identifier = "Archives"
-    name = "Archives"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/archives"
-    weight = 10
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-  archive = "archives"
+[[menu.main]]
+  weight = 1
+  identifier = "home"
+  name = "Home"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-home\" aria-hidden=\"true\"></i>"
+  url = "/"
+[[menu.main]]
+  weight = 2
+  identifier = "categories"
+  name = "Categories"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-bookmark\" aria-hidden=\"true\"></i>"
+  url = "/categories"
+[[menu.main]]
+  weight = 3
+  identifier = "tags"
+  name = "Tags"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-tags\" aria-hidden=\"true\"></i>"
+  url = "/tags"
