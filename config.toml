@@ -4,6 +4,12 @@ defaultContentLanguage = 'ja'
 title = 'RuskLabo_Blog'
 theme = 'PaperMod'
 
+params:
+    # Hugoにおける"production"の意味合いは、Hugoで立ち上げているウェブサイトがググって見つけることができるぐらいのニュアンス
+    # 余談だが、ローカルで"Hugo server -D"を実行した場合のenvは"development"
+    env: production
+    googleAnalyticsID: G-HK5FW9E372
+
 [[menu.main]]
   weight = 1
   identifier = "home"
